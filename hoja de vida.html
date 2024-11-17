@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida</title>
     <style>
-        /* Estilos generales */
         * {
             margin: 0;
             padding: 0;
@@ -13,51 +12,21 @@
         }
 
         body {
-			
-			background-image: url('fondoc.jpg');
+            background-image: url('fondoc.jpg');
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: #000000;
-            
             margin: 0;
         }
 
         header {
-  
             color: white;
             padding: 20px;
             text-align: center;
         }
-		
+        
         header h1 {
             font-size: 2.5em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #000DFF;
         }
 
         main {
@@ -79,17 +48,28 @@
         .sidebar img {
             width: 100%;
             margin-bottom: 20px;
+            border-radius: 10px;
         }
 
         .sidebar h2 {
             text-align: center;
-            color: #000DFF;
+            color: #000000;
         }
 
         .sidebar p {
             text-align: center;
             font-weight: bold;
             margin-top: 10px;
+        }
+
+        .sidebar a {
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        .sidebar a:hover {
+            color: #000DFF;
+            text-decoration: none;
         }
 
         section {
@@ -124,9 +104,24 @@
             color: white;
         }
 
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills span {
+            color: #000000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #000DFF;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            font-size: 0.9em;
+        }
+
         footer {
             text-align: center;
-           
             color: white;
             padding: 10px;
             margin-top: 20px;
@@ -145,72 +140,93 @@
 </head>
 <body>
 <header>
-        <h1>Hoja de Vida</h1>
-        <nav>
-            <ul>
-                <li><a href="#datos-personales">Datos Personales</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Hoja de Vida</h1>
+</header>
 
-    <main>
-        <!-- Barra lateral -->
-        <aside class="sidebar">
-		 <img src="foto1.png" alt="" >
-<h2>Anderson Quijano Castañeda</h2>
-            <p>Diseño e Integracion Multimedia</p>
-        </aside>
+<main>
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <img src="foto1.png" alt="Foto de Anderson Quijano">
+        <h2><a href="https://co.linkedin.com/in/anderson-casta%C3%B1eda-2180682a1" target="_blank">Anderson Quijano Castañeda</a></h2>
+        <p>Diseño e Integración Multimedia</p>
+        <br>
+        <h2>Contacto</h2>
+        <p><a href="mailto:ander30050419@gmail.com">ander30050419@gmail.com</a></p>
+        <p><a href="https://api.whatsapp.com/send?phone=573004517769" target="_blank">(+57) 3004517769</a></p>
+    </aside>
 
-        <!-- Sección principal -->
-        <section>
-            <!-- Datos personales -->
-            <h2 id="datos-personales">Datos Personales</h2>
-            <p><strong>Nombre:</strong> Anderson Quijano Castañeda</p>
-            <p><strong>Edad:</strong> 21 Años</p>
-            <p><strong>Dirección:</strong> Cra. 97c #50-20, Bosa, Bogotá </p>
-            <p><strong>Email:</strong> <a href="mailto:ander30050419@gmail.com">ander30050419@gmail.com</a></p>
-            <p><strong>Teléfono:</strong> (+57) 3004517769</p>
-<br>
+    <!-- Sección principal -->
+    <section>
+        <h2 id="sobre-mi">Sobre mí</h2>
+        <p>Soy una persona creativa, honesta y proactiva, con disposición para enfrentar nuevos desafíos. Me considero puntual e integrado al trabajo en equipo. Mi experiencia incluye el diseño y desarrollo de soluciones digitales innovadoras.</p>
+        <br>
 
-            <!-- Formación académica -->
-            <h2 id="formacion">Formación Académica</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Institución</th>
-                        <th>Título</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>El Servicio Nacional de Aprendizaje Sena</td>
-                        <td>DISEÑO E INTEGRACION DE MULTIMEDIA</td>
-                        <td>2023</td>
-                    </tr>					
-                </tbody>
-            </table>
-<br>
-            <!-- Experiencia laboral -->
-            <h2 id="experiencia">Experiencia Laboral</h2>
-            <p><strong>Disproel S.A</strong> - Asistente de Mercadeo y Publicdad</p>
-            <p><strong>Duración:</strong> 20/10/2023 - Trabajo Actualemte </p>
-            <p>Soy un diseñador y programador con experiencia en HTML y CSS. Me especializo en crear interfaces web atractivas y funcionales. Entre mis logros, diseñé y desarrollé un portafolio online profesional para una empresa, logrando mejorar su presencia digital. Además, creé una aplicación desde cero sin conocimientos previos en el área, destacando mi capacidad para aprender rápidamente y adaptarme a nuevos desafíos. Mi enfoque combina creatividad, innovación y soluciones prácticas para satisfacer las necesidades de los usuarios.</p>
-<br>
-            <!-- Contacto -->
-            <h2 id="contacto">Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:ander30050419@gmail.com">ander30050419@gmail.com</a></p>
-            <p><strong>Teléfono:</strong> (+57) 3004517769 </p>
-            <p><strong>LinkedIn:</strong> <a href="https://co.linkedin.com/in/anderson-casta%C3%B1eda-2180682a1?trk=people-guest_people_search-card" target="_blank">Anderson Castañeda</a></p>
-        </section>
-		<br>
-    </main>
+        <h2 id="datos-personales">Datos Personales</h2>
+        <p><strong>Nombre:</strong> Anderson Quijano Castañeda</p>
+        <p><strong>Edad:</strong> 21 años</p>
+        <p><strong>Dirección:</strong> Cra. 97c #50-20, Bosa, Bogotá</p>
+        <p><strong>Email:</strong> <a href="mailto:ander30050419@gmail.com">ander30050419@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> (+57) 3004517769</p>
+        <br>
 
-    <footer>
-      <p>Desarrollado por <a href="#">Anderson C.</a>. &copy; 2024</p>
+        <h2 id="formacion">Formación Académica</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Institución</th>
+                    <th>Título</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SENA</td>
+                    <td>Diseño e Integración Multimedia</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Fundación Universitaria Unicompensar</td>
+                    <td>Ingeniería de Software (en curso)</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <h2 id="experiencia">Experiencia Laboral</h2>
+        <p><strong>Disproel S.A.</strong> - Asistente de Mercadeo y Publicidad</p>
+        <p><strong>Duración:</strong> 2022 - Actualmente</p>
+        <p>Responsable de apoyar actividades de mercadeo y publicidad, incluyendo la implementación de campañas y la promoción de productos y servicios.</p>
+        <br>
+
+        <h2 id="habilidades">Habilidades</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Diseño Gráfico</span>
+            <span>Adobe Illustrator</span>
+            <span>Adobe Photoshop</span>
+            <span>Adobe Dreamweaver</span>
+        </div>
+        <br>
+
+        <h2 id="intereses">Intereses</h2>
+		<div class="skills">
+            <span>Programar</span>
+            <span>Diseñar</span>
+            <span>Nadar</span>
+            <span>Adobe Illustrator</span>
+            <span>Viajar</span>
+            <span>Dibujar</span>
+			<span>Entrenar</span>
+        </div>
+        <br>
+        
+    </section>
+</main>
+
+<footer>
+    <p>Desarrollado por <a href="#">Anderson C.</a>. &copy; 2024</p>
 </footer>
 </body>
 </html>
